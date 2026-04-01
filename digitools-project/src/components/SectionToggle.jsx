@@ -1,4 +1,4 @@
-const SectionToggle = ({ activeSection, setActiveSection }) => {
+const SectionToggle = ({ activeSection, setActiveSection, cartCount }) => {
   return (
     <div className="text-center mb-12">
       <h2 className="text-[36px] font-bold text-[#1f2937] mb-2">
@@ -11,6 +11,7 @@ const SectionToggle = ({ activeSection, setActiveSection }) => {
       </p>
 
       <div className="flex justify-center gap-2">
+        {/* Products Button */}
         <button
           onClick={() => setActiveSection("products")}
           className={`btn h-8 min-h-8 px-5 rounded-full text-[11px] ${
@@ -22,6 +23,7 @@ const SectionToggle = ({ activeSection, setActiveSection }) => {
           Products
         </button>
 
+        {/* Cart Button */}
         <button
           onClick={() => setActiveSection("cart")}
           className={`btn h-8 min-h-8 px-5 rounded-full text-[11px] ${
@@ -30,7 +32,7 @@ const SectionToggle = ({ activeSection, setActiveSection }) => {
               : "bg-white border border-gray-300 text-gray-600"
           }`}
         >
-          Cart ({activeSection === "cart" ? "2" : "0"})
+          Cart ({cartCount})
         </button>
       </div>
     </div>
