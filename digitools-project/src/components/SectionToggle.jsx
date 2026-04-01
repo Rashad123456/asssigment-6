@@ -11,7 +11,7 @@ const SectionToggle = ({ activeSection, setActiveSection, cartCount }) => {
       </p>
 
       <div className="flex justify-center gap-2">
-        {/* Products Button */}
+        
         <button
           onClick={() => setActiveSection("products")}
           className={`btn h-8 min-h-8 px-5 rounded-full text-[11px] ${

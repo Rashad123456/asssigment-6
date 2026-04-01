@@ -16,14 +16,12 @@ function App() {
   const [activeSection, setActiveSection] = useState("products");
   const [cart, setCart] = useState([]);
 
-  // 🔄 Load products
   useEffect(() => {
     fetch("/products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
-  // 🛒 Add to cart
   const handleAddToCart = (product) => {
     const exists = cart.find((item) => item.id === product.id);
 
@@ -36,14 +34,12 @@ function App() {
     toast.success(`${product.name} added to cart`);
   };
 
-  // ❌ Remove from cart
   const handleRemoveFromCart = (id) => {
     const removed = cart.find((item) => item.id === id);
     setCart(cart.filter((item) => item.id !== id));
     toast.error(`${removed?.name || "Product"} removed from cart`);
   };
 
-  // ✅ Checkout
   const handleCheckout = () => {
     if (cart.length === 0) {
       toast.info("Your cart is empty");
@@ -56,20 +52,16 @@ function App() {
 
   return (
     <div className="bg-[#f5f5f7] min-h-screen">
-      {/* Navbar */}
       <Navbar cartCount={cart.length} />
 
-      {/* Banner */}
       <Banner />
-
-      {/* Stats */}
       <Stats />
 
-      {/* Main Section */}
       <main className="container-width py-16">
         <SectionToggle
           activeSection={activeSection}
           setActiveSection={setActiveSection}
+          cartCount={cart.length}
         />
 
         {activeSection === "products" ? (
@@ -87,16 +79,9 @@ function App() {
         )}
       </main>
 
-      {/* Steps */}
       <Steps />
-
-      {/* Pricing */}
       <Pricing />
-
-      {/* Footer */}
       <Footer />
-
-      {/* Toast */}
       <ToastContainer position="top-right" autoClose={1800} />
     </div>
   );

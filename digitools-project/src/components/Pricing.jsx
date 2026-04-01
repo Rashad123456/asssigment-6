@@ -18,10 +18,10 @@ const Pricing = () => {
             <h4 className="text-[38px] font-bold mb-5">$0</h4>
 
             <ul className="space-y-2 text-[12px] text-gray-600 mb-6">
-              <li>✔ Access to free tools</li>
-              <li>✔ Basic templates</li>
-              <li>✔ Community support</li>
-              <li>✔ Preview our products</li>
+              <li> Access to free tools</li>
+              <li> Basic templates</li>
+              <li> Community support</li>
+              <li> Preview our products</li>
             </ul>
 
             <button className="btn w-full h-8 min-h-8 rounded-full bg-[#7c3aed] text-white border-none text-[11px] hover:bg-[#6d28d9]">
@@ -36,11 +36,11 @@ const Pricing = () => {
             <h4 className="text-[38px] font-bold mb-5">$29/mo</h4>
 
             <ul className="space-y-2 text-[12px] mb-6">
-              <li>✔ Access to all premium tools</li>
-              <li>✔ Unlimited downloads</li>
-              <li>✔ Priority support</li>
-              <li>✔ New releases monthly</li>
-              <li>✔ Advanced analytics</li>
+              <li> Access to all premium tools</li>
+              <li> Unlimited downloads</li>
+              <li>Priority support</li>
+              <li> New releases monthly</li>
+              <li> Advanced analytics</li>
             </ul>
 
             <button className="btn w-full h-8 min-h-8 rounded-full bg-white text-[#7c3aed] border-none text-[11px] hover:bg-gray-100">
@@ -55,11 +55,11 @@ const Pricing = () => {
             <h4 className="text-[38px] font-bold mb-5">$99/mo</h4>
 
             <ul className="space-y-2 text-[12px] text-gray-600 mb-6">
-              <li>✔ Everything in Pro</li>
-              <li>✔ Team collaboration</li>
-              <li>✔ Custom integrations</li>
-              <li>✔ Dedicated support</li>
-              <li>✔ Advanced user roles</li>
+              <li> Everything in Pro</li>
+              <li> Team collaboration</li>
+              <li>Custom integrations</li>
+              <li> Dedicated support</li>
+              <li> Advanced user roles</li>
             </ul>
 
             <button className="btn w-full h-8 min-h-8 rounded-full bg-[#7c3aed] text-white border-none text-[11px] hover:bg-[#6d28d9]">
