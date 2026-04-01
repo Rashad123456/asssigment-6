@@ -2,13 +2,6 @@
 
 This is my React project where I built a digital tools platform.
 
-## 🔗 Live Link
-(Add your live site link)
-
-##  GitHub Link
-(Add your repo link)
-
-
 ## About This Project
 
 In this project, I tried to build a simple platform where users can explore different digital tools like AI writing, design templates, etc.
