@@ -1,16 +1,43 @@
-# React + Vite
+# DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my React project where I built a digital tools platform.
 
-Currently, two official plugins are available:
+## 🔗 Live Link
+(Add your live site link)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  GitHub Link
+(Add your repo link)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About This Project
 
-## Expanding the ESLint configuration
+In this project, I tried to build a simple platform where users can explore different digital tools like AI writing, design templates, etc.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users can add products to the cart, remove them and see the total price. I followed the Figma design as much as possible.
+
+## What I Used
+
+ React JS
+ Tailwind CSS
+ DaisyUI
+ JavaScript
+ React Toastify
+
+
+##  Features
+
+ Products loaded from JSON file
+ Add to cart functionality
+ Remove item from cart
+ Total price calculation
+ Toggle between Products & Cart
+ Toast message for actions
+ Responsive design
+
+##  How to Run
+
+```bash
+git clone your-repo-link
+cd digitools-project
+npm install
+npm run dev
